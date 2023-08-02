@@ -1,0 +1,37 @@
+<%- include("particals/header") %>
+<%- include("particals/nav") %>
+<h1><%= title %></h1>
+    <p>welocome to <%= title %></p>
+    <div class="form">
+        <form action="/createtask" method="post">
+        <div class="mb-1">
+            <label for="exampleInputEmail1" >Email address:</label> <br>
+            <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            <div id="emailHelp" ></div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputpassword1" >password:</label> <br>
+            <input type="password" id="exampleInputpassword1" name="password">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox"  id="examplecheck1">
+            <label  for="examplecheck1">check me out</label>
+
+        </div>
+        <button type="submit">submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("particals/footer") %>
